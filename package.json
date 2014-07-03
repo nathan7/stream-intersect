@@ -1,6 +1,6 @@
 {
   "name": "stream-intersect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "intersections of sorted streams",
   "main": "index.js",
   "dependencies": {
