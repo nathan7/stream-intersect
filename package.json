@@ -1,0 +1,28 @@
+{
+  "name": "stream-intersect",
+  "version": "1.0.0",
+  "description": "intersections of sorted streams",
+  "main": "index.js",
+  "dependencies": {
+    "readable-stream": "^1.0.27-1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/stream-intersect.git"
+  },
+  "keywords": [
+    "stream",
+    "set",
+    "intersect",
+    "intersection",
+    "index",
+    "leveldb"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan7/stream-intersect/issues"
+  },
+  "homepage": "https://github.com/nathan7/stream-intersect"
+}
