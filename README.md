@@ -32,7 +32,7 @@ var intersect = require('stream-intersect')
 
 #### toKey :: function(item) -> key
 
-  the key function is applied to the items before comparison.
+  the key function is applied to the items before comparison. it defaults to the identity function (a no-op).
 
 #### cmp :: function(a, b) -> Number
 
