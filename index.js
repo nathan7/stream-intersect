@@ -5,13 +5,13 @@ module.exports = (function create(opts) {
     return create(
       { cmp: opts_.cmp || opts.cmp
       , toKey: opts_.toKey || opts.toKey
-      , select: opts_.select || opts.select
+      , merge: opts_.merge || opts.merge
       })
   }
 
   var cmp = opts.cmp || simpleCmp
     , toKey = opts.toKey || identity
-    , select = opts.select || identity
+    , merge = opts.merge || identity
 
   return intersect
 
@@ -61,7 +61,7 @@ module.exports = (function create(opts) {
       if (c > 0)
         return readB()
 
-      var val = select(aVal, bVal)
+      var val = merge(aVal, bVal)
       if (val === undefined)
         readA()
       else if (val !== null)
