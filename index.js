@@ -66,10 +66,8 @@ module.exports = (function create(opts) {
         readA()
       else if (val !== null)
         stream.push(val)
-      else {
-        ended = true
-        stream.push(null)
-      }
+      else
+        end()
     }
   }
 })({})
